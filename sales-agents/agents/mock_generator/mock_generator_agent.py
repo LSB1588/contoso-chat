@@ -266,11 +266,13 @@ AFTER_TEMPLATE = """<!DOCTYPE html>
 COMPANY_COLORS = {
     "astryda":    ("#1a237e", "#0d47a1"),
     "bell_fresh": ("#1b5e20", "#2e7d32"),
+    "tabata_hd":  ("#7b3f00", "#bf6800"),
 }
 
 COMPANY_HERO_DESC = {
     "astryda": "精密光学技術とLED投影技術で、製造業・医療・半導体分野のお客様の課題を解決します。",
     "bell_fresh": "新鮮なカット野菜を安定供給。食品加工のプロとして40年のノウハウで食卓を支えます。",
+    "tabata_hd": "創業1947年。世界から厳選したナッツ素材を独自のST加工法で製菓業界へ安定供給します。",
 }
 
 

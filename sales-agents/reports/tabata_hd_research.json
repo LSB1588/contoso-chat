@@ -1,0 +1,244 @@
+{
+  "company_id": "tabata_hd",
+  "company_name": "株式会社タバタホールディングス",
+  "url": "https://www.tabatainc.co.jp/",
+  "researched_at": "2026-03-04",
+  "page_title": "株式会社タバタ｜製菓食品ナッツ素材メーカー",
+  "description": "製菓食品用ナッツの総合輸入加工会社。ST加工法（日米特許取得）・FSSC22000認証取得。グループ売上高約120億円・従業員約230名。",
+  "last_update_estimate": "2026年1月（レシピ・トピックスの最終公開日より）",
+  "has_contact_form": true,
+  "has_english_page": true,
+  "has_recruitment_page": true,
+  "has_mobile_friendly": null,
+  "has_sns_links": false,
+  "has_online_shop": false,
+  "contact_info": {
+    "address": "大阪府大阪市中央区瓦屋町1-4-15",
+    "other_locations": ["千葉", "神戸", "東京"],
+    "english_url": "https://www.tabatainc.co.jp/en/",
+    "founded": "1947年1月",
+    "capital": "9,600万円",
+    "employees": "139名（単体）/ 約230名（グループ）"
+  },
+  "products": [
+    "アーモンド（ホール・スライス・フェザースライス・パウダー・ペースト・プラリネペースト・破砕品）",
+    "ピスタチオ（ホール・パウダー・ペースト）",
+    "ピーナッツ（ホール・パウダー・ペースト）",
+    "カシューナッツ（ホール・ペースト）",
+    "マカデミアナッツ（ホール）",
+    "クルミ（ホール・破砕品）",
+    "ヘーゼルナッツ（ホール・パウダー）",
+    "ココナッツ（シュレッド・パウダー）",
+    "パンプキンシード（ホール）",
+    "サンフラワーシード（ホール）",
+    "各種ナッツフラワー（油脂分・粒度調整品）",
+    "付香用ナッツオイル",
+    "キャンディコートナッツ",
+    "プレミアムナッツシリーズ（ST加工法適用品）"
+  ],
+  "inactive_products": [],
+  "site_structure": {
+    "confirmed_pages": [
+      "https://www.tabatainc.co.jp/",
+      "https://www.tabatainc.co.jp/en/",
+      "https://www.tabatainc.co.jp/html/aboutus/",
+      "https://www.tabatainc.co.jp/html/aboutus/outlinehistory.html",
+      "https://www.tabatainc.co.jp/html/aboutus/technology.html",
+      "https://www.tabatainc.co.jp/html/aboutus/recruit.html",
+      "https://www.tabatainc.co.jp/html/product/",
+      "https://www.tabatainc.co.jp/html/column/",
+      "https://www.tabatainc.co.jp/html/tips/recipe.html",
+      "https://www.tabatainc.co.jp/html/tips/nourishmentencyclopedia.html",
+      "https://www.tabatainc.co.jp/topics/"
+    ],
+    "notes": "URLパス構造が /html/ プレフィックスのフラットファイル型。静的HTML or 古いCMSの可能性。"
+  },
+  "heuristic_scores": [
+    {
+      "key": "visibility",
+      "principle_en": "Visibility of system status",
+      "principle_ja": "システム状態の可視性",
+      "score": 2,
+      "issues": [
+        "問い合わせフォーム送信後の確認・自動返信の有無が不明",
+        "在庫状況・納期・サンプル請求進捗などのステータス情報がない",
+        "トピックス投稿日の表示が不明確な可能性"
+      ],
+      "suggestions": [
+        "フォーム送信後に完了メッセージ・自動返信メールを設置",
+        "製品ページに納期目安・在庫状況のインジケーターを追加",
+        "トピックスに投稿日・更新日を明確に表示"
+      ]
+    },
+    {
+      "key": "real_world_match",
+      "principle_en": "Match between system and real world",
+      "principle_ja": "システムと現実の対応",
+      "score": 4,
+      "issues": [
+        "URLパス（/html/product/almond.html）が技術的命名で一般ユーザーに不親切",
+        "「まめ知識」というセクション名が初見ユーザーには意図が伝わりにくい"
+      ],
+      "suggestions": [
+        "URLを /products/almond/ などわかりやすいパス構造に変更",
+        "「まめ知識」に「コラム・ナレッジ」などの補足説明を追加"
+      ]
+    },
+    {
+      "key": "user_control",
+      "principle_en": "User control and freedom",
+      "principle_ja": "ユーザーコントロールと自由",
+      "score": 3,
+      "issues": [
+        "サイト内検索機能の有無が不明",
+        "コンテンツが多数あるが絞り込み・カテゴリフィルターが不明",
+        "PDFカタログダウンロード後のサイトへの戻り誘導が不明"
+      ],
+      "suggestions": [
+        "ヘッダーにサイト内全文検索バーを実装",
+        "まめ知識・レシピのカテゴリフィルタリング機能を追加",
+        "PDFページに「サイトへ戻る」ボタンを設置"
+      ]
+    },
+    {
+      "key": "consistency",
+      "principle_en": "Consistency and standards",
+      "principle_ja": "一貫性と標準",
+      "score": 3,
+      "issues": [
+        "日本語（/html/product/）と英語（/en/）のURL構造が異なる",
+        "「株式会社タバタ」と「株式会社タバタホールディングス」の関係がサイト上で不明確",
+        "採用ページが会社案内配下に埋め込まれており独立していない"
+      ],
+      "suggestions": [
+        "日英サイトのURL・ナビ構造を統一する",
+        "グループ構造を図示した専用ページを整備",
+        "採用情報を /recruit/ として独立したセクションに昇格"
+      ]
+    },
+    {
+      "key": "error_prevention",
+      "principle_en": "Error prevention",
+      "principle_ja": "エラー防止",
+      "score": 2,
+      "issues": [
+        "問い合わせフォームのバリデーション実装状況が確認できない",
+        "最小発注ロット・梱包単位などの誤発注防止情報が製品ページに不足の可能性",
+        "古いPDFリンクが残存している可能性"
+      ],
+      "suggestions": [
+        "フォームに確認画面とインラインバリデーションを実装",
+        "製品ページに最小ロット・梱包単位・納期を明記",
+        "定期的なリンク切れチェックを実施"
+      ]
+    },
+    {
+      "key": "recognition",
+      "principle_en": "Recognition rather than recall",
+      "principle_ja": "記憶より認識",
+      "score": 4,
+      "issues": [
+        "製品比較機能がない可能性",
+        "用途別（焼き菓子・チョコレート等）のフィルターが確認できない",
+        "B2Bユーザー向けの仕様書・アレルゲン情報へのアクセスが直感的でない可能性"
+      ],
+      "suggestions": [
+        "用途別フィルター（製菓・パン・アイス等）を製品一覧に設置",
+        "各製品ページに仕様書・アレルゲン情報PDFのダウンロードリンクを追加",
+        "FSSC22000などの認証バッジをトップページに大きく表示"
+      ]
+    },
+    {
+      "key": "flexibility",
+      "principle_en": "Flexibility and efficiency",
+      "principle_ja": "柔軟性と効率",
+      "score": 2,
+      "issues": [
+        "モバイル対応状況がサイト直接確認不可（403エラー）",
+        "サイト内検索機能が確認できない",
+        "複数製品の一括サンプル請求機能がない",
+        "英語ページのコンテンツ範囲が日本語と同等かどうか不明"
+      ],
+      "suggestions": [
+        "モバイルファーストのレスポンシブデザインを確認・強化",
+        "全文検索機能を実装",
+        "複数製品の一括サンプル請求・比較機能を追加",
+        "英語ページのコンテンツを日本語ページと同等レベルに拡充"
+      ]
+    },
+    {
+      "key": "aesthetic",
+      "principle_en": "Aesthetic and minimalist design",
+      "principle_ja": "審美的でミニマルなデザイン",
+      "score": 3,
+      "issues": [
+        "URLパス（/html/ プレフィックス）が古い設計を示唆しCMS管理されていない可能性",
+        "PDFがサイト上に直接配置されデジタルカタログへの移行が遅れている可能性",
+        "ナッツ食品としてのビジュアル訴求（高品質写真・使用シーン画像）が不明"
+      ],
+      "suggestions": [
+        "CMSへの移行でコンテンツ管理と表示品質を向上",
+        "PDFをインタラクティブなデジタルカタログに移行",
+        "製菓シーンでのナッツ使用事例写真を強化"
+      ]
+    },
+    {
+      "key": "error_recovery",
+      "principle_en": "Help users recognize, diagnose, recover from errors",
+      "principle_ja": "エラーの認識・診断・回復を助ける",
+      "score": 2,
+      "issues": [
+        "カスタム404ページの有無が確認できない",
+        "サイトがクローラーをブロック（403）しており、SEOクローラビリティへの影響が懸念される",
+        "フォームのエラー表示方法が不明"
+      ],
+      "suggestions": [
+        "カスタム404ページを作成（製品一覧・お問い合わせへのリンク付き）",
+        "ボットブロック設定の見直し（GoogleBot等の正規クローラーは許可）",
+        "フォームエラーを具体的メッセージで問題フィールド直近に表示"
+      ]
+    },
+    {
+      "key": "help_docs",
+      "principle_en": "Help and documentation",
+      "principle_ja": "ヘルプとドキュメント",
+      "score": 3,
+      "issues": [
+        "FAQページが確認できない（取引条件・サンプル請求など）",
+        "製品選定ガイドや用途別活用例ドキュメントが不明",
+        "技術資料・規格書のダウンロードセンターの有無が不明"
+      ],
+      "suggestions": [
+        "FAQページを新設（サンプル請求・取引条件・アレルゲン・最小ロット等）",
+        "製品選定ガイド（用途別・加工形態別チャート）を作成",
+        "技術資料・規格書のダウンロードセンターを整備"
+      ]
+    }
+  ],
+  "total_score": 28,
+  "max_score": 50,
+  "score_percentage": 56,
+  "grade": "C（要改善）",
+  "top_issues": [
+    "サイトがクローラー・ボットをブロック（403）しており、SEOクローラビリティに悪影響の可能性",
+    "サイト内検索機能が確認できず、豊富なコンテンツへのアクセス効率が低い",
+    "SNSリンクが確認できず、コンテンツマーケティングの拡散機会を逃している",
+    "FAQページが確認できず、B2B取引における一般的疑問への回答が不足",
+    "問い合わせフォームのバリデーション品質・エラー回復の仕組みが不明"
+  ],
+  "top_suggestions": [
+    "GoogleBot等正規クローラーの許可設定を見直し、SEOクローラビリティを改善する",
+    "サイト内検索機能を実装し、製品・レシピ・コラムを横断検索できるようにする",
+    "公式SNSアカウント（Instagram・LinkedIn等）を開設しサイトへのリンクを追加する",
+    "FAQページを新設（サンプル請求・取引条件・最小ロット・アレルゲン情報等）",
+    "CMSへ移行し、URLパス構造の刷新・保守性向上・デザイン統一を実現する"
+  ],
+  "strengths": [
+    "英語ページ（/en/）を設置しており基本的なグローバル対応がある",
+    "採用ページ（/html/aboutus/recruit.html）が整備されている",
+    "ST加工法（日米特許）・FSSC22000認証など独自の強みの技術情報を発信",
+    "まめ知識（レシピ・コラム・栄養百科）が充実し定期更新でSEO・ブランディング効果",
+    "創業1947年・グループ売上高約120億円の信頼性",
+    "展示会（P&B JAPAN等）出展情報をタイムリーに告知"
+  ]
+}

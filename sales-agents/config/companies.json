@@ -12,7 +12,12 @@
       "founded": "2001",
       "added_at": "2026-03-04",
       "status": "active",
-      "tags": ["製造業", "光学", "B2B", "海外展開可能性"],
+      "tags": [
+        "製造業",
+        "光学",
+        "B2B",
+        "海外展開可能性"
+      ],
       "notes": "Metoree 2026年1月調査で業界3位。20年以上の実績。1個からのカスタム対応が強み。"
     },
     {
@@ -27,8 +32,28 @@
       "founded": "1984",
       "added_at": "2026-03-04",
       "status": "active",
-      "tags": ["食品加工", "カット野菜", "B2B", "創業40年"],
+      "tags": [
+        "食品加工",
+        "カット野菜",
+        "B2B",
+        "創業40年"
+      ],
       "notes": "創業約40年の老舗食品加工会社。問い合わせフォーム・採用ページ不在。最終更新日が古い可能性あり。"
+    },
+    {
+      "id": "tabata_hd",
+      "name": "株式会社タバタホールディングス",
+      "name_en": "",
+      "url": "https://www.tabatainc.co.jp/",
+      "industry": "製菓食品ナッツ素材メーカー・輸入加工",
+      "industry_en": "",
+      "business_model": "B2B",
+      "contact_email": "",
+      "founded": "",
+      "added_at": "2026-03-04",
+      "status": "active",
+      "tags": [],
+      "notes": ""
     }
   ],
   "schema_version": "1.0",
