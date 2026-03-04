@@ -1,0 +1,78 @@
+{
+  "company_id": "astryda",
+  "company_name": "アストライダ株式会社",
+  "url": "https://www.astryda.com/",
+  "researched_at": "2026-03-04",
+  "page_title": "アストライダ株式会社",
+  "description": "LEDイメージプロジェクター・光学部品の製造販売。1個からのカスタム対応が強み。",
+  "last_update_estimate": "2026年1月13日（新着情報の最終エントリより）",
+  "site_renewal_date": "2025年2月2日",
+  "has_contact_form": true,
+  "has_english_page": false,
+  "has_recruitment_page": true,
+  "has_mobile_friendly": null,
+  "has_sns_links": false,
+  "has_online_shop": false,
+  "contact_info": {
+    "phone": "043-275-2812",
+    "fax": "043-351-7530",
+    "email": "infoweb@astryda.com"
+  },
+  "products": [
+    "LEDイメージプロジェクター（各種）",
+    "ラインプロジェクター",
+    "光学ミラー",
+    "プラスチック非球面レンズ（Arton）",
+    "Cマウントアクセサリー",
+    "ガラススケール目盛板（レチクル）",
+    "校正証明サービス"
+  ],
+  "inactive_products": [
+    "チェンジャータイプイメージプロジェクター（全機種販売終了：2026年1月）",
+    "ラインプロジェクター（販売終了：2026年1月）",
+    "AS-58025・AS-PR100（LEDイメージプロジェクター販売終了：2025年12月）"
+  ],
+  "recent_updates": [
+    {"date": "2026-01-13", "content": "チェンジャータイプイメージプロジェクター全機種販売終了"},
+    {"date": "2026-01-07", "content": "ラインプロジェクター販売終了"},
+    {"date": "2025-12-24", "content": "LEDイメージプロジェクター（AS-58025・AS-PR100等）販売終了"},
+    {"date": "2025-12-09", "content": "イメージプロジェクター小型タイプ超ワイドレンズ73度追加"},
+    {"date": "2025-09-05", "content": "LEDイメージプロジェクター回転モーターレス強固タイプ販売開始"}
+  ],
+  "heuristic_scores": [
+    {"key": "visibility", "principle_en": "Visibility of system status", "principle_ja": "システム状態の可視性", "score": 2, "issues": ["販売終了製品の状態表示が不明瞭", "フォーム送信フィードバックが不明", "パンくずリスト不明"], "suggestions": ["販売終了製品に赤色バッジを付与", "パンくずリストを全ページに実装"]},
+    {"key": "real_world_match", "principle_en": "Match between system and real world", "principle_ja": "システムと現実の対応", "score": 3, "issues": ["型番のみで用途が不明瞭", "専門用語の説明不足"], "suggestions": ["型番に用途説明を追加", "専門用語にツールチップを追加"]},
+    {"key": "user_control", "principle_en": "User control and freedom", "principle_ja": "ユーザーコントロールと自由", "score": 2, "issues": ["製品詳細から一覧への戻るリンクが不明", "フォームリセットボタン不明"], "suggestions": ["パンくずリストを実装", "スティッキーナビゲーションを設置"]},
+    {"key": "consistency", "principle_en": "Consistency and standards", "principle_ja": "一貫性と標準", "score": 3, "issues": ["URLがhttpとhttpsで混在", "URL命名規則が不統一", "会社概要が2ページに分散"], "suggestions": ["全URLをhttpsに統一", "会社概要・連絡先を1ページに集約"]},
+    {"key": "error_prevention", "principle_en": "Error prevention", "principle_ja": "エラー防止", "score": 2, "issues": ["フォームリアルタイムバリデーション不明", "販売終了品への問い合わせリスク"], "suggestions": ["フォームにバリデーションを実装", "販売終了品をグレーアウト・代替品へリンク"]},
+    {"key": "recognition", "principle_en": "Recognition rather than recall", "principle_ja": "記憶より認識", "score": 3, "issues": ["統合製品カタログページの有無不明", "製品比較が困難"], "suggestions": ["統合製品カタログページを作成", "製品比較機能を実装"]},
+    {"key": "flexibility", "principle_en": "Flexibility and efficiency", "principle_ja": "柔軟性と効率", "score": 2, "issues": ["サイト内検索機能が不明", "PDFスペックシートなし", "製品比較機能なし"], "suggestions": ["サイト内検索バーを常設", "PDFダウンロードリンクを各製品ページに設置"]},
+    {"key": "aesthetic", "principle_en": "Aesthetic and minimalist design", "principle_ja": "審美的でミニマルなデザイン", "score": 3, "issues": ["製品ページのレイアウト統一性不明", "ビジュアル訴求が弱い可能性"], "suggestions": ["製品ページレイアウトを統一テンプレートで整備", "ヒーロー画像でLEDの使用シーンを大きく掲載"]},
+    {"key": "error_recovery", "principle_en": "Help users recognize, diagnose, recover from errors", "principle_ja": "エラーの認識・診断・回復を助ける", "score": 2, "issues": ["カスタム404ページ不明", "フォームエラーハンドリング不明"], "suggestions": ["カスタム404ページを作成", "フォームエラーメッセージを具体的に表示"]},
+    {"key": "help_docs", "principle_en": "Help and documentation", "principle_ja": "ヘルプとドキュメント", "score": 3, "issues": ["FAQが新着情報ページに統合されており見つけにくい", "取扱説明書PDFダウンロード不明"], "suggestions": ["FAQ専用ページを独立させる", "各製品ページに取扱説明書PDFを追加"]}
+  ],
+  "total_score": 25,
+  "max_score": 50,
+  "score_percentage": 50,
+  "grade": "C（要改善）",
+  "top_issues": [
+    "2025年末〜2026年初に主力製品が多数販売終了しており、製品ポートフォリオの大幅変更期にある",
+    "サイト内検索機能がなく、製品数が多いにも関わらず発見性が低い",
+    "英語ページが不在で、海外顧客へのアプローチが限定的",
+    "SNSプレゼンスがほぼゼロで、新規顧客獲得チャネルが限定的",
+    "URLがhttpとhttpsで混在しており、セキュリティ・SEOに悪影響"
+  ],
+  "top_suggestions": [
+    "販売終了製品の整理と代替製品へのリダイレクト設定（高優先度）",
+    "サイト内検索機能の実装（ヘッダーに常設）",
+    "パンくずリストとアクティブナビゲーション表示の実装",
+    "全URLをhttpsに統一、URL体系を整理",
+    "モバイルレスポンシブ対応の確認・強化"
+  ],
+  "strengths": [
+    "2025年2月にサイトリニューアルを実施済み",
+    "新着情報が定期的に更新されている",
+    "会社連絡先（TEL/FAX/メール/営業時間）が明示されている",
+    "プライバシーポリシーページが存在する"
+  ]
+}

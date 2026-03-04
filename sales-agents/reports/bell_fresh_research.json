@@ -1,0 +1,66 @@
+{
+  "company_id": "bell_fresh",
+  "company_name": "ベルフレッシュ株式会社",
+  "url": "https://bell-fresh.co.jp/",
+  "researched_at": "2026-03-04",
+  "page_title": "Bellfresh",
+  "description": "カット野菜からメニュー開発まで 旬の野菜に美味しさと真心を込めて",
+  "last_update_estimate": "不明（推定2022〜2023年頃）",
+  "has_contact_form": false,
+  "has_english_page": false,
+  "has_recruitment_page": false,
+  "has_mobile_friendly": null,
+  "has_sns_links": false,
+  "has_online_shop": false,
+  "products": ["キャベツ（コールスロー用・角切り・みじん切り）", "さつま芋（天ぷら用カット・スティック・さいの目切り）"],
+  "inactive_products": [],
+  "known_typo": "個人情報保護方針ページのタイトルが「個人情報鉾方針」と誤記",
+  "contact_info": {
+    "phone": "043-244-9645",
+    "fax": "043-244-9648",
+    "email": "info@bell-fresh.co.jp"
+  },
+  "confirmed_pages": [
+    "https://bell-fresh.co.jp/",
+    "https://bell-fresh.co.jp/company/",
+    "https://bell-fresh.co.jp/item-list/",
+    "https://bell-fresh.co.jp/privacy-policy/"
+  ],
+  "heuristic_scores": [
+    {"key": "visibility", "principle_en": "Visibility of system status", "principle_ja": "システム状態の可視性", "score": 2, "issues": ["パンくずリストが不明瞭", "最終更新日が未表示", "在庫ステータスが不明"], "suggestions": ["パンくずリストを全ページに実装", "ページに最終更新日を明示"]},
+    {"key": "real_world_match", "principle_en": "Match between system and real world", "principle_ja": "システムと現実の対応", "score": 3, "issues": ["誤字「個人情報鉾方針」あり", "英語サイト名と日本語会社名の混在"], "suggestions": ["誤字を即時修正", "社名表記を統一"]},
+    {"key": "user_control", "principle_en": "User control and freedom", "principle_ja": "ユーザーコントロールと自由", "score": 2, "issues": ["確認できるページが4ページのみ", "サイト内検索なし", "採用ページが外部依存"], "suggestions": ["サイト内検索を実装", "採用ページを自社ドメインに設置"]},
+    {"key": "consistency", "principle_en": "Consistency and standards", "principle_ja": "一貫性と標準", "score": 2, "issues": ["英語・日本語の社名表記混在", "標準的なページ（お問い合わせ・採用）が不足"], "suggestions": ["ブランドガイドラインを策定", "標準ページを追加"]},
+    {"key": "error_prevention", "principle_en": "Error prevention", "principle_ja": "エラー防止", "score": 2, "issues": ["問い合わせフォームが自社サイトに不在", "誤字が放置されている"], "suggestions": ["問い合わせフォームを自社設置", "コンテンツ校正フローを整備"]},
+    {"key": "recognition", "principle_en": "Recognition rather than recall", "principle_ja": "記憶より認識", "score": 2, "issues": ["商品画像の有無が不明", "カット方法の視覚的説明がない"], "suggestions": ["商品写真・図解を掲載", "FAQ追加"]},
+    {"key": "flexibility", "principle_en": "Flexibility and efficiency", "principle_ja": "柔軟性と効率", "score": 1, "issues": ["サイト内検索なし", "英語ページなし", "オンライン発注機能なし"], "suggestions": ["商品フィルタリング機能追加", "オンライン見積もりフォーム設置"]},
+    {"key": "aesthetic", "principle_en": "Aesthetic and minimalist design", "principle_ja": "審美的でミニマルなデザイン", "score": 3, "issues": ["コンテンツ量が少なく情報不足に見える"], "suggestions": ["高品質な食品写真でビジュアル訴求強化"]},
+    {"key": "error_recovery", "principle_en": "Help users recognize, diagnose, recover from errors", "principle_ja": "エラーの認識・診断・回復を助ける", "score": 1, "issues": ["カスタム404ページの有無不明", "誤字が放置されている"], "suggestions": ["カスタム404ページを作成", "即時誤字修正"]},
+    {"key": "help_docs", "principle_en": "Help and documentation", "principle_ja": "ヘルプとドキュメント", "score": 1, "issues": ["FAQページなし", "商品カタログPDFなし", "アクセスマップ不明"], "suggestions": ["FAQページ新設", "商品カタログPDFのダウンロード提供"]}
+  ],
+  "total_score": 19,
+  "max_score": 50,
+  "score_percentage": 38,
+  "grade": "D（要緊急対応）",
+  "top_issues": [
+    "問い合わせフォームが自社サイトに不在（電話・FAXのみ）",
+    "確認できるページが4ページのみ、採用・FAQ・問い合わせページが欠落",
+    "誤字「個人情報鉾方針」がGoogle検索スニペットで確認済み",
+    "英語ページ・SNSリンクが不在",
+    "柔軟性・ヘルプ機能が最低評価（1/5点）"
+  ],
+  "top_suggestions": [
+    "誤字「個人情報鉾方針」を「個人情報保護方針」に即時修正する",
+    "自社サイト内に問い合わせページ（/contact/）を設置し、フォームを実装する",
+    "商品ページに写真・価格・最小ロット・納期情報を追加する",
+    "採用ページを自社ドメイン（/recruit/）に設置する",
+    "FAQページを新設し、取引条件・発注方法をまとめる"
+  ],
+  "priority_improvements": [
+    {"priority": 1, "category": "誤字修正", "action": "「個人情報鉾方針」→「個人情報保護方針」に即時修正", "effort": "低", "impact": "高"},
+    {"priority": 2, "category": "問い合わせページ追加", "action": "/contact/ページ新設・フォーム設置", "effort": "低〜中", "impact": "高"},
+    {"priority": 3, "category": "商品ページ充実", "action": "商品一覧に写真・価格・最小ロット・納期を追加", "effort": "中", "impact": "高"},
+    {"priority": 4, "category": "採用ページ自社化", "action": "/recruit/ページを自社ドメインに設置", "effort": "中", "impact": "中"},
+    {"priority": 5, "category": "FAQページ追加", "action": "取引条件・発注方法・対応エリアをまとめたFAQを追加", "effort": "低", "impact": "中"}
+  ]
+}

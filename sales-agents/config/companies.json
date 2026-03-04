@@ -1,0 +1,36 @@
+{
+  "companies": [
+    {
+      "id": "astryda",
+      "name": "アストライダ株式会社",
+      "name_en": "ASTRYDA Inc.",
+      "url": "https://www.astryda.com/",
+      "industry": "LED投影機・光学部品製造",
+      "industry_en": "LED Projector / Optical Components",
+      "business_model": "B2B",
+      "contact_email": "infoweb@astryda.com",
+      "founded": "2001",
+      "added_at": "2026-03-04",
+      "status": "active",
+      "tags": ["製造業", "光学", "B2B", "海外展開可能性"],
+      "notes": "Metoree 2026年1月調査で業界3位。20年以上の実績。1個からのカスタム対応が強み。"
+    },
+    {
+      "id": "bell_fresh",
+      "name": "ベルフレッシュ株式会社",
+      "name_en": "Bell Fresh Co., Ltd.",
+      "url": "https://bell-fresh.co.jp/",
+      "industry": "カット野菜・食品加工",
+      "industry_en": "Fresh Cut Vegetables / Food Processing",
+      "business_model": "B2B",
+      "contact_email": "",
+      "founded": "1984",
+      "added_at": "2026-03-04",
+      "status": "active",
+      "tags": ["食品加工", "カット野菜", "B2B", "創業40年"],
+      "notes": "創業約40年の老舗食品加工会社。問い合わせフォーム・採用ページ不在。最終更新日が古い可能性あり。"
+    }
+  ],
+  "schema_version": "1.0",
+  "last_updated": "2026-03-04"
+}
