@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="アストライダ株式会社 - 精密光学で、製造現場の課題を解決する。LED投影機・光学部品の専門メーカー。1個から対応、試作から量産まで。">
+  <title>アストライダ株式会社 | LED投影機・精密光学部品メーカー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ===== CSS RESET & BASE ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --navy: #0d2240;
+      --navy-mid: #1a3a60;
+      --navy-light: #2a5080;
+      --orange: #e8640a;
+      --orange-light: #f07830;
+      --orange-dark: #c0520a;
+      --white: #ffffff;
+      --off-white: #f5f7fa;
+      --light-grey: #e8ecf0;
+      --mid-grey: #8a9bb0;
+      --text-dark: #1a2535;
+      --text-mid: #4a5a6a;
+      --text-light: #7a8a9a;
+      --border: #dde3ea;
+      --shadow-sm: 0 2px 8px rgba(13, 34, 64, 0.08);
+      --shadow-md: 0 4px 20px rgba(13, 34, 64, 0.12);
+      --shadow-lg: 0 8px 40px rgba(13, 34, 64, 0.18);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --transition: all 0.25s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-dark);
+      background-color: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== HEADER / NAV ===== */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(13, 34, 64, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: var(--transition);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .logo-main {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.05em;
+    }
+
+    .logo-sub {
+      font-size: 10px;
+      font-weight: 300;
+      color: var(--mid-grey);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .logo-accent {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+      background-color: rgba(255,255,255,0.08);
+    }
+
+    .nav-cta {
+      background-color: var(--orange) !important;
+      color: var(--white) !important;
+      border-radius: var(--radius-sm) !important;
+      padding: 8px 20px !important;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--orange-light) !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: none;
+      background-color: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      color: rgba(255,255,255,0.8);
+      padding: 14px 24px;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: var(--transition);
+    }
+
+    .mobile-menu a:hover {
+      color: var(--white);
+      background-color: rgba(255,255,255,0.06);
+      padding-left: 32px;
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #102848 100%);
+      overflow: hidden;
+      padding-top: 68px;
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-bg-glow {
+      position: absolute;
+      top: 20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(232, 100, 10, 0.15) 0%, transparent 65%);
+      border-radius: 50%;
+    }
+
+    .hero-bg-glow-2 {
+      position: absolute;
+      bottom: -10%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(42, 80, 128, 0.4) 0%, transparent 65%);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(232, 100, 10, 0.15);
+      border: 1px solid rgba(232, 100, 10, 0.35);
+      color: #f0a060;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+      letter-spacing: 0.06em;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--orange);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.3); }
+    }
+
+    .hero-title {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+    }
+
+    .hero-title .accent {
+      color: var(--orange);
+      position: relative;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(255,255,255,0.65);
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 560px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--orange);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+      box-shadow: 0 4px 16px rgba(232, 100, 10, 0.35);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--orange-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(232, 100, 10, 0.45);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: transparent;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 32px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,0.7);
+      background-color: rgba(255,255,255,0.06);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    .stat-item {
+      border-left: 2px solid var(--orange);
+      padding-left: 16px;
+    }
+
+    .stat-number {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+
+    /* ===== SECTION COMMON ===== */
+    section {
+      padding: 88px 0;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 24px;
+      height: 2px;
+      background-color: var(--orange);
+    }
+
+    .section-title {
+      font-size: clamp(22px, 3.5vw, 34px);
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      max-width: 620px;
+    }
+
+    .section-header {
+      margin-bottom: 56px;
+    }
+
+    /* ===== APPEAL POINTS ===== */
+    #appeal {
+      background-color: var(--off-white);
+    }
+
+    .appeal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .appeal-card {
+      background-color: var(--white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .appeal-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .appeal-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .appeal-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .appeal-icon {
+      width: 52px;
+      height: 52px;
+      background-color: rgba(232, 100, 10, 0.1);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .appeal-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+
+    .appeal-subtitle {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+    }
+
+    .appeal-text {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ===== PRODUCTS ===== */
+    #products {
+      background-color: var(--white);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .product-card {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      background-color: var(--white);
+    }
+
+    .product-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .product-card-img {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 52px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card-img.led {
+      background: linear-gradient(135deg, #1a3a60 0%, #0d2240 100%);
+    }
+
+    .product-card-img.optical {
+      background: linear-gradient(135deg, #2a5080 0%, #1a3a60 100%);
+    }
+
+    .product-card-img.custom {
+      background: linear-gradient(135deg, #c0520a 0%, #0d2240 100%);
+    }
+
+    .product-card-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 60%);
+    }
+
+    .product-card-body {
+      padding: 24px;
+    }
+
+    .product-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--orange);
+      background-color: rgba(232, 100, 10, 0.08);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .product-card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .product-card-desc {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .product-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .product-item-tag {
+      font-size: 11px;
+      color: var(--text-mid);
+      background-color: var(--off-white);
+      border: 1px solid var(--border);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .product-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--navy-mid);
+      font-size: 13px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .product-link:hover {
+      color: var(--orange);
+      gap: 10px;
+    }
+
+    .product-link::after {
+      content: '→';
+    }
+
+    .products-footer {
+      text-align: center;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--navy-mid);
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--navy);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ===== SEGMENTS ===== */
+    #segments {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #segments::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    #segments .section-title { color: var(--white); }
+    #segments .section-desc { color: rgba(255,255,255,0.6); }
+
+    .segments-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      position: relative;
+    }
+
+    .segment-card {
+      background-color: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-md);
+      padding: 28px 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .segment-card:hover {
+      background-color: rgba(255,255,255,0.1);
+      border-color: rgba(232, 100, 10, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .segment-icon {
+      font-size: 40px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .segment-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .segment-desc {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+
+    /* ===== NEWS ===== */
+    #news {
+      background-color: var(--off-white);
+    }
+
+    .news-list {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background-color: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-item:hover {
+      background-color: var(--off-white);
+    }
+
+    .news-date {
+      font-size: 13px;
+      color: var(--text-light);
+      font-weight: 500;
+      white-space: nowrap;
+      min-width: 100px;
+    }
+
+    .news-category {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    .cat-product {
+      background-color: rgba(232, 100, 10, 0.1);
+      color: var(--orange-dark);
+    }
+
+    .cat-company {
+      background-color: rgba(42, 80, 128, 0.1);
+      color: var(--navy-mid);
+    }
+
+    .cat-info {
+      background-color: rgba(0,0,0,0.06);
+      color: var(--text-mid);
+    }
+
+    .news-text {
+      font-size: 14px;
+      color: var(--text-dark);
+      font-weight: 400;
+      flex: 1;
+    }
+
+    .news-text a {
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .news-text a:hover {
+      color: var(--orange);
+    }
+
+    .news-footer {
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    /* ===== CTA BANNER ===== */
+    #cta {
+      background: linear-gradient(135deg, var(--orange-dark) 0%, var(--orange) 100%);
+      padding: 72px 0;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .cta-text .cta-title {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .cta-text .cta-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--white);
+      color: var(--orange-dark);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 13px 28px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+    }
+
+    .btn-white-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: transparent;
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 13px 28px;
+      border-radius: var(--radius-sm);
+      border: 2px solid rgba(255,255,255,0.5);
+      transition: var(--transition);
+    }
+
+    .btn-white-outline:hover {
+      border-color: var(--white);
+      background-color: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+
+    /* ===== CONTACT ===== */
+    #contact {
+      background-color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-info h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-detail:last-child {
+      border-bottom: none;
+    }
+
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      background-color: rgba(232, 100, 10, 0.1);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      color: var(--text-light);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .contact-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .contact-value.phone {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    .contact-note {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .contact-form-panel {
+      background-color: var(--off-white);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-form-panel h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-mid);
+      margin-bottom: 6px;
+    }
+
+    .required-badge {
+      display: inline-block;
+      font-size: 10px;
+      background-color: var(--orange);
+      color: var(--white);
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 14px;
+      color: var(--text-dark);
+      background-color: var(--white);
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--navy-mid);
+      box-shadow: 0 0 0 3px rgba(42, 80, 128, 0.12);
+    }
+
+    .form-textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .btn-form {
+      width: 100%;
+      background-color: var(--navy);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 13px 24px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: var(--transition);
+      letter-spacing: 0.05em;
+    }
+
+    .btn-form:hover {
+      background-color: var(--navy-mid);
+      transform: translateY(-1px);
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+      background-color: var(--navy);
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-top {
+      padding: 56px 0 40px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand .logo-main {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .footer-brand .logo-sub {
+      margin-bottom: 16px;
+    }
+
+    .footer-brand-desc {
+      font-size: 12px;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 20px;
+    }
+
+    .footer-sns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .sns-icon {
+      width: 36px;
+      height: 36px;
+      background-color: rgba(255,255,255,0.08);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .sns-icon:hover {
+      background-color: var(--orange);
+    }
+
+    .footer-col h4 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      transition: var(--transition);
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--white);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .appeal-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .segments-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 64px 0;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .appeal-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .segments-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cta-actions {
+        justify-content: center;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-stats {
+        gap: 20px;
+      }
+
+      .stat-number {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .segments-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn-primary, .btn-secondary {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-main">ASTRYDA <span class="logo-accent">|</span> アストライダ</span>
+        <span class="logo-sub">Precision Optics &amp; LED Projectors</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#products">製品情報</a>
+        <a href="#segments">導入事例</a>
+        <a href="#news">ニュース</a>
+        <a href="#contact">会社情報</a>
+        <a href="#contact" class="nav-cta">お問い合わせ</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products">製品情報</a>
+    <a href="#appeal">特長・強み</a>
+    <a href="#segments">お客様業種</a>
+    <a href="#news">ニュース</a>
+    <a href="#contact">会社情報</a>
+    <a href="#contact" style="color: #f0a060; font-weight: 700;">お問い合わせ →</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-glow-2"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">LED投影機・精密光学部品 専門メーカー</div>
+
+      <h1 class="hero-title">
+        精密光学で、<br>
+        製造現場の<span class="accent">課題</span>を<br>
+        解決する。
+      </h1>
+
+      <p class="hero-subtitle">
+        LEDプロジェクターから光学ミラー・レンズ・レティクルまで。<br>
+        工場・店舗・医療機器・半導体製造の現場に、<br>
+        20年以上の実績と1個からの対応力でお応えします。
+      </p>
+
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">製品カタログを見る</a>
+        <a href="#contact" class="btn-secondary">お問い合わせ</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">20年+</div>
+          <div class="stat-label">業界実績</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1個〜</div>
+          <div class="stat-label">少量対応</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">試作〜量産</div>
+          <div class="stat-label">一貫サポート</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4業種+</div>
+          <div class="stat-label">幅広い対応業種</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPEAL POINTS ===== -->
+<section id="appeal">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Why ASTRYDA</div>
+      <h2 class="section-title">アストライダが選ばれる理由</h2>
+      <p class="section-desc">精密光学のプロフェッショナルとして、お客様の多様なニーズに応える体制を整えています。</p>
+    </div>
+
+    <div class="appeal-grid">
+      <div class="appeal-card">
+        <div class="appeal-icon">📦</div>
+        <div class="appeal-title">1個から対応</div>
+        <div class="appeal-subtitle">少量・試作から大量生産まで</div>
+        <p class="appeal-text">
+          MOQ（最小発注数量）の縛りがなく、試作品の1個から承ります。スタートアップや研究機関のプロトタイプ開発から、大手メーカーの量産対応まで柔軟に対応します。
+        </p>
+      </div>
+
+      <div class="appeal-card">
+        <div class="appeal-icon">🏭</div>
+        <div class="appeal-title">20年以上の実績</div>
+        <div class="appeal-subtitle">精密光学の専門知識と経験</div>
+        <p class="appeal-text">
+          LED投影機・光学部品の分野で20年以上の製造実績。工場・店舗・医療・半導体など幅広い業種のお客様が抱える光学的課題に対して、豊富な知見から最適解をご提案します。
+        </p>
+      </div>
+
+      <div class="appeal-card">
+        <div class="appeal-icon">⚙️</div>
+        <div class="appeal-title">試作〜量産まで</div>
+        <div class="appeal-subtitle">一貫した開発・製造サポート</div>
+        <p class="appeal-text">
+          仕様検討・設計・試作・評価・量産まで、すべての工程を一社で完結。コミュニケーションコストを削減し、スピーディかつ品質の安定した製品をお届けします。
+        </p>
+      </div>
+
+      <div class="appeal-card">
+        <div class="appeal-icon">🔬</div>
+        <div class="appeal-title">カスタム対応力</div>
+        <div class="appeal-subtitle">特注・オーダーメイドに対応</div>
+        <p class="appeal-text">
+          標準品に加え、特注サイズ・特注仕様のオーダーメイド製品にも対応。レティクルのパターン設計やレンズの特殊コーティングなど、専門技術が必要な案件もお任せください。
+        </p>
+      </div>
+
+      <div class="appeal-card">
+        <div class="appeal-icon">🚚</div>
+        <div class="appeal-title">迅速な対応</div>
+        <div class="appeal-subtitle">スピード見積もり・納品</div>
+        <p class="appeal-text">
+          お問い合わせから見積もり回答まで最短翌営業日。緊急対応や短納期案件もご相談ください。国内製造だからこそ実現できるスピードと品質管理で信頼にお応えします。
+        </p>
+      </div>
+
+      <div class="appeal-card">
+        <div class="appeal-icon">📋</div>
+        <div class="appeal-title">充実のサポート</div>
+        <div class="appeal-subtitle">導入から運用まで安心のアフターケア</div>
+        <p class="appeal-text">
+          製品の使用方法・取り付け・調整についての技術サポートも充実。導入後も安心してご利用いただけるよう、担当者が親身にサポートいたします。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Products</div>
+      <h2 class="section-title">製品カテゴリ</h2>
+      <p class="section-desc">LED投影機から精密光学部品まで、製造現場の多様なニーズに対応する製品ラインアップ。</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- LED Projectors -->
+      <div class="product-card">
+        <div class="product-card-img led">
+          <span style="position:relative;z-index:1;">💡</span>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">LED Projectors</span>
+          <h3 class="product-card-title">LED投影機</h3>
+          <p class="product-card-desc">
+            ロゴ・文字・図形を床・壁面へ鮮明に投影。工場の作業エリア表示から店舗の集客演出まで対応します。
+          </p>
+          <div class="product-items">
+            <span class="product-item-tag">LED画像投影機</span>
+            <span class="product-item-tag">ロゴプロジェクター</span>
+            <span class="product-item-tag">フロア投影</span>
+            <span class="product-item-tag">LEDラインプロジェクター</span>
+          </div>
+          <a href="#contact" class="product-link">詳細・お問い合わせ</a>
+        </div>
+      </div>
+
+      <!-- Optical Parts -->
+      <div class="product-card">
+        <div class="product-card-img optical">
+          <span style="position:relative;z-index:1;">🔭</span>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Optical Parts</span>
+          <h3 class="product-card-title">精密光学部品</h3>
+          <p class="product-card-desc">
+            精密機器・検査装置・医療機器向けの光学素子。高精度な仕様と安定した品質で信頼される製品群。
+          </p>
+          <div class="product-items">
+            <span class="product-item-tag">ハーフミラー</span>
+            <span class="product-item-tag">光学ミラー</span>
+            <span class="product-item-tag">アートンプラスチックレンズ</span>
+            <span class="product-item-tag">ガラスレティクル</span>
+          </div>
+          <a href="#contact" class="product-link">詳細・お問い合わせ</a>
+        </div>
+      </div>
+
+      <!-- Custom Solutions -->
+      <div class="product-card">
+        <div class="product-card-img custom">
+          <span style="position:relative;z-index:1;">🛠️</span>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Accessories &amp; Custom</span>
+          <h3 class="product-card-title">アクセサリー・カスタム</h3>
+          <p class="product-card-desc">
+            Cマウントアクセサリー、フィルターホルダーなど光学システムを支える周辺部品。特注・カスタム対応も可能。
+          </p>
+          <div class="product-items">
+            <span class="product-item-tag">Cマウントアクセサリー</span>
+            <span class="product-item-tag">フィルターホルダー</span>
+            <span class="product-item-tag">特注・カスタム品</span>
+          </div>
+          <a href="#contact" class="product-link">詳細・お問い合わせ</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="products-footer">
+      <a href="#contact" class="btn-outline">全製品一覧・カタログ請求</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CUSTOMER SEGMENTS ===== -->
+<section id="segments">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Industries</div>
+      <h2 class="section-title">お客様の業種・用途</h2>
+      <p class="section-desc">幅広い産業分野での導入実績。各業種特有の要求仕様に応じた製品をご提案します。</p>
+    </div>
+
+    <div class="segments-grid">
+      <div class="segment-card">
+        <span class="segment-icon">🏭</span>
+        <div class="segment-title">工場・製造業</div>
+        <p class="segment-desc">作業エリアのライン投影、製品検査ラインの位置決め、工程管理のビジュアル表示</p>
+      </div>
+
+      <div class="segment-card">
+        <span class="segment-icon">🏪</span>
+        <div class="segment-title">小売・店舗</div>
+        <p class="segment-desc">床面へのロゴ・キャラクター投影、ショーウィンドウ演出、案内サインシステム</p>
+      </div>
+
+      <div class="segment-card">
+        <span class="segment-icon">🔬</span>
+        <div class="segment-title">医療機器メーカー</div>
+        <p class="segment-desc">高精度光学系部品の供給、医療検査装置向けレティクル・ミラー・レンズ</p>
+      </div>
+
+      <div class="segment-card">
+        <span class="segment-icon">💻</span>
+        <div class="segment-title">半導体・精密機器</div>
+        <p class="segment-desc">半導体製造装置向け光学素子、精密測定機器用部品、高精度アライメント用レティクル</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section id="news">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">News &amp; Updates</div>
+      <h2 class="section-title">ニュース・お知らせ</h2>
+    </div>
+
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">2025.03.01</span>
+        <span class="news-category cat-product">新製品</span>
+        <span class="news-text"><a href="#contact">LEDラインプロジェクター LP-500シリーズ 発売開始のお知らせ</a></span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2025.01.15</span>
+        <span class="news-category cat-company">会社情報</span>
+        <span class="news-text"><a href="#contact">2025年の営業開始について（1月6日より通常営業）</a></span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2024.12.10</span>
+        <span class="news-category cat-info">お知らせ</span>
+        <span class="news-text"><a href="#contact">年末年始休業のご案内（12月28日〜1月5日）</a></span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2024.10.20</span>
+        <span class="news-category cat-product">製品情報</span>
+        <span class="news-text"><a href="#contact">アートンプラスチックレンズ 新ラインアップ追加のお知らせ</a></span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">2024.09.01</span>
+        <span class="news-category cat-company">会社情報</span>
+        <span class="news-text"><a href="#contact">ウェブサイトをリニューアルしました</a></span>
+      </div>
+    </div>
+
+    <div class="news-footer">
+      <a href="#contact" class="btn-outline">ニュース一覧を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2 class="cta-title">まずはお気軽にご相談ください</h2>
+        <p class="cta-sub">製品カタログ・資料請求も無料でお送りします。見積もり依頼もお電話・メールで承ります。</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#contact" class="btn-white">製品カタログを請求する</a>
+        <a href="tel:0432752812" class="btn-white-outline">☎ 043-275-2812</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">お問い合わせ・会社情報</h2>
+      <p class="section-desc">製品に関するご質問、見積もり依頼、資料請求はお気軽にどうぞ。</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>アストライダ株式会社</h3>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">TEL</div>
+            <div class="contact-value phone"><a href="tel:0432752812" style="color:var(--navy)">043-275-2812</a></div>
+            <div class="contact-note">平日 9:00〜17:30（土日祝休み）</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-label">メール</div>
+            <div class="contact-value"><a href="mailto:infoweb@astryda.com" style="color:var(--navy-mid)">infoweb@astryda.com</a></div>
+            <div class="contact-note">返信は翌営業日以内を目標</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">所在地</div>
+            <div class="contact-value" style="font-size:13px;">〒262-0012<br>千葉県千葉市花見川区<br>朝日ケ丘3丁目5番18号</div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">🏢</div>
+          <div>
+            <div class="contact-label">事業内容</div>
+            <div class="contact-value" style="font-size:13px;">LED投影機・光学部品の製造・販売<br>光学機器の設計・開発・カスタム対応</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-panel">
+        <h3>お問い合わせフォーム</h3>
+        <div class="form-group">
+          <label class="form-label">会社名・お名前 <span class="required-badge">必須</span></label>
+          <input type="text" class="form-input" placeholder="株式会社〇〇 / 山田 太郎">
+        </div>
+        <div class="form-group">
+          <label class="form-label">メールアドレス <span class="required-badge">必須</span></label>
+          <input type="email" class="form-input" placeholder="your@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">お問い合わせ種別</label>
+          <select class="form-select">
+            <option value="">選択してください</option>
+            <option>製品についての質問</option>
+            <option>見積もり依頼</option>
+            <option>カタログ・資料請求</option>
+            <option>カスタム・特注相談</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">お問い合わせ内容 <span class="required-badge">必須</span></label>
+          <textarea class="form-textarea" placeholder="ご質問・ご要望をご記入ください"></textarea>
+        </div>
+        <button type="button" class="btn-form">送信する →</button>
+        <p style="font-size:11px;color:var(--text-light);margin-top:12px;text-align:center;">
+          送信いただいた情報はプライバシーポリシーに従って管理されます。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-main">ASTRYDA <span class="logo-accent">|</span> アストライダ</span>
+          <span class="logo-sub">Precision Optics &amp; LED Projectors</span>
+        </a>
+        <p class="footer-brand-desc" style="margin-top:12px;">
+          精密光学技術で製造現場の課題を解決する、LED投影機・光学部品の専門メーカー。千葉市に拠点を置き、全国のお客様にサービスを提供しています。
+        </p>
+        <div class="footer-sns">
+          <div class="sns-icon" title="X (Twitter)">𝕏</div>
+          <div class="sns-icon" title="LinkedIn">in</div>
+          <div class="sns-icon" title="YouTube">▶</div>
+          <div class="sns-icon" title="Facebook">f</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>製品情報</h4>
+        <ul>
+          <li><a href="#products">LED画像投影機</a></li>
+          <li><a href="#products">LEDラインプロジェクター</a></li>
+          <li><a href="#products">ハーフミラー</a></li>
+          <li><a href="#products">光学ミラー</a></li>
+          <li><a href="#products">アートンレンズ</a></li>
+          <li><a href="#products">Cマウントアクセサリー</a></li>
+          <li><a href="#products">フィルターホルダー</a></li>
+          <li><a href="#products">ガラスレティクル</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>ソリューション</h4>
+        <ul>
+          <li><a href="#segments">工場・製造業向け</a></li>
+          <li><a href="#segments">小売・店舗向け</a></li>
+          <li><a href="#segments">医療機器向け</a></li>
+          <li><a href="#segments">半導体・精密機器向け</a></li>
+          <li><a href="#appeal">1個からの対応</a></li>
+          <li><a href="#appeal">カスタム・特注</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="#contact">会社概要</a></li>
+          <li><a href="#news">ニュース</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#contact">採用情報</a></li>
+          <li><a href="#contact">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2025 アストライダ株式会社 (ASTRYDA CO., LTD.) All Rights Reserved.
+      </p>
+      <div class="footer-links">
+        <a href="#contact">プライバシーポリシー</a>
+        <a href="#contact">利用規約</a>
+        <a href="#contact">サイトマップ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const spans = hamburgerBtn.querySelectorAll('span');
+
+  hamburgerBtn.addEventListener('click', function() {
+    const isOpen = mobileMenu.classList.toggle('open');
+    if (isOpen) {
+      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    }
+  });
+
+  // Close mobile menu on link click
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    });
+  });
+
+  // Header scroll effect
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      header.style.boxShadow = '0 4px 30px rgba(13, 34, 64, 0.35)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
